@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4 Seasons web site</title>
+    <meta name="description" content="4 Seasons image gallery" />
+    <meta name="author" content="Roger Graham" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script
+      src="https://kit.fontawesome.com/81300d1731.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- preload loads stylesheet asynchronously and prevents render blocking -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>4 Seasons image gallery</h1>
+        <h2>
+          <i class="fas fa-seedling">&nbsp;</i><i class="far fa-sun">&nbsp;</i
+          ><i class="fas fa-leaf">&nbsp;</i><i class="fas fa-snowflake"></i>
+        </h2>
+      </div>
+    </header>
+    <nav>
+      <ul class="topnav">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i> &nbsp; Home</a>
+        </li>
+        <li>
+          <a href="spring.html"
+            ><i class="fas fa-seedling"></i> &nbsp; Spring</a
+          >
+        </li>
+        <li>
+          <a href="summer.html"><i class="far fa-sun"></i> &nbsp; Summer</a>
+        </li>
+        <li>
+          <a href="autumn.html"><i class="fas fa-leaf"></i> &nbsp; Autumn</a>
+        </li>
+        <li>
+          <a href="winter.html"
+            ><i class="fas fa-snowflake"></i> &nbsp; Winter</a
+          >
+        </li>
+        <li>
+          <a class="active" href="images.html"
+            ><i class="fas fa-camera"></i> &nbsp; Photos</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="gallery-grid">
+      <div class="gallery-flex">
+        <div class="gallery-holder">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/1s.webp" />
+            <source media="(min-width:768px)" srcset="images/1m.webp" />
+            <source type="image/webp" srcset="images/1s.webp" />
+            <source media="(min-width:994px)" srcset="images/1s.jpg" />
+            <source media="(min-width:768px)" srcset="images/1m.jpg" />
+            <img
+              src="images/1s.jpg"
+              alt="admiral butterfly"
+              class="gallery-image"
+              width="600"
+              height="400"
+            />
+          </picture>
+        </div>
+        <div class="gallery-holder">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/2s.webp" />
+            <source media="(min-width:768px)" srcset="images/2m.webp" />
+            <source type="image/webp" srcset="images/2s.webp" />
+            <source media="(min-width:994px)" srcset="images/2s.jpg" />
+            <source media="(min-width:768px)" srcset="images/2m.jpg" />
+            <img
+              src="images/2s.jpg"
+              alt="Autumn leaf"
+              class="gallery-image"
+              width="600"
+              height="400"
+            />
+          </picture>
+        </div>
+        <div class="gallery-holder">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/3s.webp" />
+            <source media="(min-width:768px)" srcset="images/3m.webp" />
+            <source type="image/webp" srcset="images/3s.webp" />
+            <source media="(min-width:994px)" srcset="images/3s.jpg" />
+            <source media="(min-width:768px)" srcset="images/3m.jpg" />
+            <img
+              src="images/3s.jpg"
+              alt="summer flowers"
+              class="gallery-image"
+              width="600"
+              height="400"
+            />
+          </picture>
+        </div>
+        <div class="gallery-holder">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/4s.webp" />
+            <source media="(min-width:768px)" srcset="images/4m.webp" />
+            <source type="image/webp" srcset="images/4s.webp" />
+            <source media="(min-width:994px)" srcset="images/4s.jpg" />
+            <source media="(min-width:768px)" srcset="images/4m.jpg" />
+            <img
+              src="images/4s.jpg"
+              alt="yellow butterfly"
+              class="gallery-image"
+              width="600"
+              height="400"
+            />
+          </picture>
+        </div>
+        <div class="gallery-holder">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/5s.webp" />
+            <source media="(min-width:768px)" srcset="images/5m.webp" />
+            <source type="image/webp" srcset="images/5s.webp" />
+            <source media="(min-width:994px)" srcset="images/5s.jpg" />
+            <source media="(min-width:768px)" srcset="images/5m.jpg" />
+            <img
+              src="images/5s.jpg"
+              alt="Lupin flowers"
+              class="gallery-image"
+              width="600"
+              height="400"
+            />
+          </picture>
+        </div>
+
+        <div class="gallery-holder">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/6s.webp" />
+            <source media="(min-width:600px)" srcset="images/6m.webp" />
+            <source type="image/webp" srcset="images/6s.webp" />
+            <source media="(min-width:994px)" srcset="images/6s.jpg" />
+            <source media="(min-width:768px)" srcset="images/6m.jpg" />
+            <img
+              src="images/6s.jpg"
+              alt="Wet autumn leaves"
+              class="gallery-image"
+              width="600"
+              height="400"
+            />
+          </picture>
+        </div>
+      </div>
+      <!-- end of flex box -->
+      <div class="thumbnail-row">
+        <div class="thumbnail-holder">
+          <picture>
+            <source type="image/webp" srcset="images/1xs.webp" />
+            <img
+              src="images/1xs.jpg"
+              alt="summer flowers"
+              class="gallery-image"
+              width="150"
+              height="100"
+            />
+          </picture>
+        </div>
+        <div class="thumbnail-holder">
+          <picture>
+            <source type="image/webp" srcset="images/2xs.webp" />
+            <img
+              src="images/2xs.jpg"
+              alt="Autumn leaf"
+              class="gallery-image"
+              width="150"
+              height="100"
+            />
+          </picture>
+        </div>
+        <div class="thumbnail-holder">
+          <picture>
+            <source type="image/webp" srcset="images/3xs.webp" />
+            <img
+              src="images/3xs.jpg"
+              alt="summer flowers"
+              class="gallery-image"
+              width="150"
+              height="100"
+            />
+          </picture>
+        </div>
+        <div class="thumbnail-holder">
+          <picture>
+            <source type="image/webp" srcset="images/4xs.webp" />
+            <img
+              src="images/4xs.jpg"
+              alt="Yellow butterfly"
+              class="gallery-image"
+              width="150"
+              height="100"
+            />
+          </picture>
+        </div>
+        <div class="thumbnail-holder">
+          <picture>
+            <source type="image/webp" srcset="images/5xs.webp" />
+            <img
+              src="images/5xs.jpg"
+              alt="Lupins"
+              class="gallery-image"
+              width="150"
+              height="100"
+            />
+          </picture>
+        </div>
+        <div class="thumbnail-holder">
+          <picture>
+            <source type="image/webp" srcset="images/6xs.webp" />
+            <img
+              src="images/6xs.jpg"
+              alt="wet autumn leaves"
+              class="gallery-image"
+              width="150"
+              height="100"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="gallery-text">
+        <h2>Random Stuff</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus
+          tortor ut tortor condimentum posuere. Nunc varius lacus sed
+          consectetur sollicitudin. Nulla interdum finibus sem eu fringilla.
+          Morbi dolor ex, tempus sed suscipit nec, mollis ut odio. Nam pharetra
+          ex mauris, in aliquet lectus molestie non.
+        </p>
+        <p>
+          Nulla interdum finibus sem eu fringilla. Morbi dolor ex, tempus sed
+          suscipit nec, mollis ut odio. Nam pharetra ex mauris, in aliquet
+          lectus molestie non.
+        </p>
+      </div>
+      <div class="gallery-text2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus
+          tortor ut tortor condimentum posuere. Nunc varius lacus sed
+          consectetur sollicitudin. Nulla interdum finibus sem eu fringilla.
+          Morbi dolor ex, tempus sed suscipit nec, mollis ut odio. Nam pharetra
+          ex mauris, in aliquet lectus molestie non. ulla interdum finibus sem
+          eu fringilla. Morbi dolor ex, tempus sed suscipit nec, mollis ut odio.
+          Nam pharetra ex mauris, in aliquet lectus molestie non.ulla interdum
+          finibus sem eu fringilla. Morbi dolor ex, tempus sed suscipit nec,
+          mollis ut odio. Nam pharetra ex mauris, in aliquet lectus molestie
+          non.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

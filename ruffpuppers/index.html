@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruff Puppers Kennels - Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="topnav">
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          id="bars"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="logo-holder">
+          <h1>
+            <img
+              src="logo-mob.png"
+              width="280"
+              height="40"
+              alt="Ruff Puppers Kennels"
+            />
+          </h1>
+        </div>
+        <div class="link-bar" id="myLinks">
+          <a href="index.html" class="active submenu">Home</a>
+          <a href="chihuahua.html" class="submenu">Chihuahua</a>
+          <a href="#bookmark1" class="submenu">Collie</a>
+          <a href="#bookmark2" class="submenu">Wolfhound</a>
+          <a href="#bookmark2" class="submenu">Poodle</a>
+        </div>
+      </div>
+      <div class="flex-grid">
+        <div class="content-column">
+          <div class="main-content">
+            <h2>Dog Breed</h2>
+            <p>
+              <picture
+                ><source media="(min-width:600px)" srcset="main_p1_mob.jpg" />
+                <img
+                  class="article-img"
+                  src="main_p1_mob_150.jpg"
+                  alt="dog breeds"
+                  width="150"
+                  height="100"
+              /></picture>
+              A dog breed is a particular strain of dog that was purposefully
+              bred by humans to perform specific tasks, such as herding,
+              hunting, and guarding. Dogs are the most variable mammal on earth,
+              with artificial selection producing around 450 globally recognized
+              breeds. These breeds possess distinct traits related to
+              morphology, which include body size, skull shape, tail phenotype,
+              fur type, and coat colour. Their behavioural traits include
+              guarding, herding, and hunting, and personality traits such as
+              hypersocial behavior, boldness, and aggression. Most breeds were
+              derived from small numbers of founders within the last 200 years.
+              As a result, today dogs are the most abundant carnivore species
+              and are dispersed around the world.
+            </p>
+            <p id="bookmark1">
+              <picture
+                ><source media="(min-width:600px)" srcset="main_p2_mob.jpg" />
+                <img
+                  class="article-img"
+                  src="main_p2_mob_150.jpg"
+                  alt="dog breeds"
+                  width="150"
+                  height="100"
+              /></picture>
+              A dog breed will consistently produce the desirable physical
+              traits, movement and temperament that were developed over decades
+              of selective breeding. For each breed they recognize, kennel clubs
+              and breed registries usually maintain and publish a breed standard
+              which is a written description of the ideal specimen of the breed.
+              Other uses of the term breed when referring to dogs include pure
+              breeds, cross-breeds, mixed breeds and natural breeds.
+            </p>
+            <p id="bookmark2">
+              <picture
+                ><source media="(min-width:600px)" srcset="main_p3_mob.jpg" />
+                <img
+                  class="article-img"
+                  src="main_p3_mob_150.jpg"
+                  alt="dog breeds"
+                  width="150"
+                  height="113"
+              /></picture>
+              Prior to the standardisation of dog breeds, there were different
+              types of dogs that were defined by their function. Many different
+              terms were used to describe dogs, such as breed, strain, type,
+              kind, and variety. By the end of the Victorian era, society had
+              changed and so did the role of dogs. Form was given a more
+              prominent role than function. Different types or breeds of dog
+              were being developed by breeders who wanted to define specific
+              characteristics and desirable features in their dogs. Driven by
+              dog shows and the groups that hosted them, the term dog breed took
+              on an entirely new meaning. Dog show competitions included
+              best-in-breed winners, and the purebreds were winning. Breed
+              standards are the reason the breed came to be, and with those
+              standards are key features, including form, function and fitness
+              for purpose. The Kennel Club in the UK was founded in 1873, and
+              was the world's first national kennel club and breed registry. The
+              International Canine Federation was founded in 1911 as a worldwide
+              organisation. Its objective is to bring global uniformity to the
+              breeding, exhibiting and judging of pure-bred dogs. It now has 99
+              members countries.
+            </p>
+          </div>
+          <div class="footer">
+            <p>
+              &#169;This page is under public domain. Content for the instructed
+              site is from Wikipedia&reg;, licensed under the Creative Commons
+              Attribution-ShareAlike License.
+            </p>
+          </div>
+        </div>
+        <div class="ad-column">
+          <img
+            src="ad_main_250.jpg"
+            class="ad-img"
+            alt="Doggo stuff"
+            width="250"
+            height="589"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("myLinks");
+      var z = document.getElementById("bars");
+      function myFunction() {
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+          z.style.color = "white;";
+        }
+      }
+      function closeMenu(y) {
+        if (y.matches) {
+          // If media query matches
+          x.style.display = "inline-flex";
+          // x.style.width = "100%";
+          // x.style.maxWidth = "100";
+          // x.style.borderRadius = "1rem";
+          // x.style.margin = "0.5rem 0.5rem 0 0.5rem";
+          // x.style.clear = "both";
+        } else {
+          x.style.display = "none";
+          z.style.color = "white;";
+        }
+      }
+      var y = window.matchMedia("(min-width: 600px)");
+      closeMenu(y); // Call listener function at run time
+      y.addListener(closeMenu); // Attach listener function on state changes
+    </script>
+  </body>
+</html>

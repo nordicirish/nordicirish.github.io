@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4 Seasons web site</title>
+    <meta name="description" content="4 Seasons web site home page" />
+    <meta name="author" content="Roger Graham" />
+    <!-- <meta name="keywords" content="Britney Spears, Britney Spears" /> -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- preload loads stylesheet asynchronously and prevents render blocking -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/81300d1731.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Welcome to 4 Seasons</h1>
+        <h2>
+          <i class="fas fa-seedling">&nbsp;</i><i class="far fa-sun">&nbsp;</i
+          ><i class="fas fa-leaf">&nbsp;</i><i class="fas fa-snowflake"></i>
+        </h2>
+      </div>
+    </header>
+    <nav>
+      <ul class="topnav">
+        <li>
+          <a class="active" href="index.html"
+            ><i class="fas fa-home"></i> &nbsp; Home</a
+          >
+        </li>
+        <li>
+          <a href="spring.html"
+            ><i class="fas fa-seedling"></i> &nbsp; Spring</a
+          >
+        </li>
+        <li>
+          <a href="summer.html"><i class="far fa-sun"></i> &nbsp; Summer</a>
+        </li>
+        <li>
+          <a href="autumn.html"><i class="fas fa-leaf"></i> &nbsp; Autumn</a>
+        </li>
+        <li>
+          <a href="winter.html"
+            ><i class="fas fa-snowflake"></i> &nbsp; Winter</a
+          >
+        </li>
+        <li>
+          <a href="images.html"><i class="fas fa-camera"></i> &nbsp; Photos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="column">
+        <div class="imageoverlay">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/springs.webp" />
+            <source media="(min-width:768px)" srcset="images/springm.webp" />
+            <source type="image/webp" srcset="images/springs.webp" />
+            <source media="(min-width:994px)" srcset="images/springs.png" />
+            <source media="(min-width:768px)" srcset="images/springm.png" />
+            <img
+              src="images/springs.png"
+              alt="Spring flowers"
+              class="imageblock"
+              width="600"
+              height="400"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="hovertext"><a href="spring.html">Spring</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="imageoverlay">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/summers.webp" />
+            <source media="(min-width:768px)" srcset="images/summerm.webp" />
+            <source type="image/webp" srcset="images/summers.webp" />
+            <source media="(min-width:994px)" srcset="images/summers.png" />
+            <source media="(min-width:768px)" srcset="images/summerm.png" />
+            <img
+              src="images/summers.png"
+              alt="Summer butterfly"
+              class="imageblock"
+              width="600"
+              height="400"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="hovertext"><a href="summer.html">Summer</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="imageoverlay">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/auts.webp" />
+            <source media="(min-width:768px)" srcset="images/autm.webp" />
+            <source type="image/webp" srcset="images/auts.webp" />
+            <source media="(min-width:994px)" srcset="images/auts.png" />
+            <source media="(min-width:768px)" srcset="images/autm.png" />
+            <img
+              src="images/auts.png"
+              alt="Autumn leaves"
+              class="imageblock"
+              width="600"
+              height="400"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="hovertext"><a href="autumn.html">Autumn</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="imageoverlay">
+          <picture>
+            <source media="(min-width:994px)" srcset="images/wints.webp" />
+            <source media="(min-width:768px)" srcset="images/wintm.webp" />
+            <source type="image/webp" srcset="images/wints.webp" />
+            <source media="(min-width:994px)" srcset="images/wints.png" />
+            <source media="(min-width:768px)" srcset="images/wintm.png" />
+            <img
+              src="images/wints.png"
+              alt="Winter forest"
+              class="imageblock"
+              width="600"
+              height="400"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="hovertext"><a href="winter.html">Winter</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container textblock">
+      <div class="column textcolumn">
+        <h1>Lorem ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus
+          tortor ut tortor condimentum posuere. Nunc varius lacus sed
+          consectetur sollicitudin. Nulla interdum finibus sem eu fringilla.
+          Morbi dolor ex, tempus sed suscipit nec, mollis ut odio. Nam pharetra
+          ex mauris, in aliquet lectus molestie non. Sed placerat maximus nisl
+          sed lacinia. Vivamus semper massa in lectus molestie lobortis.
+          Pellentesque a ipsum rutrum, molestie neque a, malesuada dolor. Sed
+          tempor venenatis ullamcorper. Praesent ac magna odio. Curabitur porta
+          imperdiet erat sit amet fermentum. Vestibulum luctus dui ut
+          condimentum fringilla. Pellentesque interdum malesuada urna vel
+          congue.
+        </p>
+        <p>
+          <a href="spring.html">Mauris porta suscipit</a> ante id pharetra.
+          Integer ornare lectus lacus, a euismod ante laoreet vitae. Fusce
+          malesuada quam quam, vel iaculis lectus rutrum vel. Vivamus non tortor
+          quis risus lobortis consequat. Suspendisse sagittis sapien et purus
+          pulvinar, feugiat pretium dolor mollis. Donec vitae cursus odio.
+          Mauris tristique ipsum et leo porta, quis cursus felis egestas.
+          <a href="https://validator.w3.org/">W3c validator</a> cras ut elit
+          semper, dapibus nibh ac, euismod dolor. Etiam magna lacus, facilisis
+          at posuere quis, molestie quis justo. Pellentesque sagittis ultricies
+          neque non lobortis. Cras auctor risus non orci eleifend hendrerit.
+        </p>
+        <ul class="a">
+          <li>Integer ornare lectus</li>
+          <li>Donec vitae cursus odio</li>
+          <li>Pellentesque sagittis ultricies</li>
+          <li>Cras auctor risus</li>
+        </ul>
+        <p>
+          Mauris porta suscipit ante id pharetra. Integer ornare lectus lacus, a
+          euismod ante laoreet vitae. Fusce malesuada quam quam, vel iaculis
+          lectus rutrum vel. Vivamus non tortor quis risus lobortis consequat.
+          Suspendisse sagittis sapien et purus pulvinar, feugiat pretium dolor
+          mollis. Donec vitae cursus odio. Mauris tristique ipsum et leo porta,
+          quis cursus felis egestas.
+        </p>
+      </div>
+      <div class="column textcolumn">
+        <h1>In id ullamcorper</h1>
+        <p>
+          <a href="https://www.tuni.fi/fi/tutustu-meihin/tamk">TAMK</a> In id
+          ullamcorper lacus. Proin dictum, dolor eu maximus venenatis, tortor
+          leo consectetur lorem, vel luctus nulla lectus tincidunt dui. Mauris
+          molestie nec felis consequat rhoncus. Quisque ultricies, tortor vel
+          fringilla laoreet, nulla sapien convallis enim, eu lacinia nibh nulla
+          vitae libero. Sed aliquam semper mi et volutpat. In dapibus neque
+          urna, hendrerit rhoncus augue luctus eu. Duis nec elit feugiat, tempus
+          dui at, venenatis sem. Sed quis nisl sapien. Donec semper leo nunc,
+          nec aliquet ante egestas sit amet. Proin nisi dolor, lacinia vitae
+          mauris sit amet, faucibus dictum mi. Mauris eleifend ipsum quam, a
+          tincidunt felis hendrerit non. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae;
+        </p>
+        <p>
+          Morbi sodales, diam eu aliquam viverra, ante ante pharetra nulla, eu
+          pretium purus dui at orci. Fusce efficitur viverra eros. Ut vehicula
+          ante ut elit rhoncus pulvinar. Maecenas a efficitur lectus, nec
+          suscipit diam. Duis imperdiet, elit sed interdum consectetur, leo quam
+          aliquet odio, in mollis arcu diam sit amet magna. Proin lacus lectus,
+          laoreet non ex in, sollicitudin rutrum mauris. Pellentesque non risus
+          risus. Etiam vitae dui enim. Nam hendrerit tempus nibh vitae finibus.
+          Phasellus placerat euismod ante.
+        </p>
+        <p>
+          Donec et efficitur sem. Donec molestie, elit nec scelerisque
+          elementum, augue odio ullamcorper enim, ut vehicula felis felis quis
+          eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Maecenas vel fermentum mi. Fusce nisi enim, fringilla eget ligula eu,
+          pharetra lobortis velit. Sed blandit, arcu id venenatis tempor, urna
+          risus venenatis mauris, id laoreet turpis magna id ligula. Donec odio
+          erat, fringilla at vulputate ut, dapibus at urna. Mauris tincidunt,
+          justo sit amet luctus interdum, dolor tellus pharetra erat, aliquet
+          tempor libero nulla eget felis. Fusce vitae quam a sem lacinia
+          imperdiet ornare et nulla. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Suspendisse potenti. Aliquam vehicula urna placerat
+          lorem lacinia, et vestibulum eros lobortis.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

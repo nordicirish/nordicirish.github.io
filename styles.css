@@ -1,0 +1,564 @@
+html {
+  font-size: 62.5%;
+}
+/* sets 1 rem at 10px */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7e6;
+  margin: 0;
+  padding: 1rem;
+  color: 000;
+  font-family: "Roboto", sans-serif;
+  /* font-size: 16px; */
+  /* pixels fallback for browsers that don't support rem */
+  font-size: 1.6rem;
+}
+
+header {
+  background-color: #5239c1;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1,
+header h2 {
+  color: #f7f7e6;
+  margin: 0;
+}
+
+header h1 {
+  margin-top: 2rem;
+}
+
+.logo {
+  background-color: #df483a;
+  border-radius: 50%;
+  padding: 1rem 0 2rem 0;
+  width: 100%;
+  min-width: 100%;
+  text-align: center;
+}
+
+h1 {
+  /* font-size: 32px; */
+  /* pixels fallback for browsers that don't support rem */
+  font-size: 3rem;
+}
+h2 {
+  /* font-size: 26px; */
+  /* pixels fallback for browsers that don't support rem */
+  font-size: 2.6rem;
+}
+h3 {
+  /* font-size: 22px; */
+  /* pixels fallback for browsers that don't support rem */
+  font-size: 2.2rem;
+}
+h4 {
+  /* font-size: 18px; */
+  /* pixels fallback for browsers that don't support rem */
+  font-size: 1.8rem;
+}
+/* link colors */
+a:link,
+a:visited {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fff;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+ul.b {
+  list-style-type: square;
+}
+ol.c {
+  list-style-type: upper-roman;
+}
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+/* Navbar styles @media settings below */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #101830;
+}
+ul.topnav li.right,
+ul.topnav li {
+  float: none;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #abc841;
+}
+
+ul.topnav li a.active {
+  background-color: #df483a;
+}
+
+.container {
+  background-color: #abc841;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.orange-container {
+  background-color: #f8945d;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+  margin: 2rem 0 1rem 0;
+}
+.textblock {
+  background-color: #f8945d;
+  padding: 2rem;
+}
+
+.banner {
+  align-items: center;
+  flex: 100%;
+  justify-content: center;
+  max-width: 100%;
+  height: 100%;
+  padding: 0 0.4rem;
+}
+
+.banner img {
+  border-radius: 2rem;
+  margin: 0.4rem 0 0 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.column {
+  align-items: center;
+  flex: 100%;
+  justify-content: center;
+  height: 100%;
+  max-width: 100%;
+  padding: 0 0.4rem 0.4rem 0.4rem;
+}
+
+.column.textcolumn {
+  padding: 0 1rem;
+}
+
+.column img {
+  border-radius: 2rem;
+  margin: 0.4rem 0 0.2rem 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.imageoverlay {
+  position: relative;
+  width: 100%;
+}
+
+.imageblock {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Image overlay & button text  */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #df483a;
+  border-radius: 2rem;
+}
+
+.imageoverlay:hover .overlay {
+  opacity: 0.9;
+}
+
+.hovertext {
+  background-color: #abc841;
+  font-size: 3.2rem;
+  padding: 1.6rem 3.2rem;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* .hovertext link styling */
+.hovertext a:link,
+.hovertext a:visited,
+.hovertext a:hover,
+.hovertext a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* wont display button on small screens */
+
+/* gallery page styles */
+
+.gallery-grid {
+  background-color: #abc841;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
+  padding: 1rem;
+  grid-gap: 1rem;
+  margin: 2rem 0 1rem 0;
+}
+.gallery-flex {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: auto;
+  grid-row: 1 / span 3;
+  justify-content: space-evenly;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  flex: 100%;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+.gallery-holder {
+  flex: 100%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding: 0.4rem;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.gallery-text {
+  flex: 100%;
+  grid-row: 4 / span 1;
+  grid-column-start: 1;
+  grid-column-end: auto;
+  background-color: #f8935dda;
+  max-width: 100%;
+  padding: 2rem;
+  overflow: hidden;
+}
+.gallery-text2 {
+  display: none;
+}
+.thumbnail-row {
+  display: none;
+}
+.thumbnail-holder {
+  display: none;
+}
+
+/* @media For portrait tablets  */
+@media (min-width: 600px) {
+  h1 {
+    /* font-size: 32px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 3.2rem;
+  }
+  h2 {
+    /* font-size: 26px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 2.6rem;
+  }
+  h3 {
+    /* font-size: 22px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 2.2rem;
+  }
+  h4 {
+    /* font-size: 18px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 1.8rem;
+  }
+  .banner {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 0.4rem;
+  }
+  .column img {
+    border-radius: 2rem;
+    margin: 0.4rem 0 0 0;
+    min-width: 100%;
+  }
+  .hovertext {
+    font-size: 5rem;
+  }
+  ul.topnav {
+    padding: 0 0 0 1rem;
+  }
+
+  ul.topnav li {
+    float: left;
+  }
+  ul.topnav li.right {
+    float: right;
+  }
+  /* gallery page styles same as default */
+}
+
+/* Landscape tablets */
+@media (min-width: 768px) {
+  h1 {
+    /* font-size: 40px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 4rem;
+  }
+  h2 {
+    /* font-size: 32px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 3.2rem;
+  }
+  h3 {
+    /* font-size: 24px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 2.4rem;
+  }
+  h4 {
+    /* font-size: 18px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 1.8rem;
+  }
+  .banner {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 0.4rem;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .imageoverlay {
+    position: relative;
+    width: 100%;
+  }
+  .hovertext {
+    font-size: 6rem;
+  }
+  ul.topnav {
+    padding: 0 0 0 1rem;
+  }
+
+  ul.topnav li {
+    float: left;
+  }
+  ul.topnav li.right {
+    float: right;
+  }
+
+  /* gallery page styles */
+  /* 2nd text block now visible */
+  .gallery-text2 {
+    display: inline-flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    grid-row: 5 / span 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
+    overflow: hidden;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    /* font-size: 48px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 4.8rem;
+  }
+  h2 {
+    /* font-size: 36px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 3.6rem;
+  }
+  h3 {
+    /* font-size: 28px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 2.8rem;
+  }
+  h4 {
+    /* font-size: 18px; */
+    /* pixels fallback for browsers that don't support rem */
+    font-size: 1.8rem;
+  }
+  .banner {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 0.4rem;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  /* shows overlay */
+  .hovertext {
+    font-size: 5rem;
+  }
+  ul.topnav {
+    padding: 0 0 0 1rem;
+  }
+  ul.topnav li {
+    float: left;
+  }
+  ul.topnav li.right {
+    float: right;
+  }
+  .imagegallery .imageblock {
+    padding: 0.4rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto 18%;
+    /* grid-template-rows: auto; */
+  }
+  .gallery-flex {
+    grid-row: 1 / span 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    justify-content: space-evenly;
+    align-content: stretch;
+    flex: 1;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .gallery-holder {
+    flex: 50%;
+    width: 33%;
+    max-width: 50%;
+    height: 33%;
+    padding: 0.4rem;
+  }
+
+  .gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+  }
+
+  .gallery-text {
+    flex: 1;
+    grid-row: 1 / span 3;
+    grid-column-start: 6;
+    max-width: 100%;
+    padding: 2rem;
+    border: 1px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .gallery-text2 {
+    grid-column-end: 1;
+    grid-column-end: 7;
+  }
+  .thumbnail-row {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    width: 100%;
+    grid-row: 4 / span 1;
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .thumbnail-holder {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+  }
+}
+/* Large devices (laptops/desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .banner {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 0.4rem;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  /* shows overlay */
+  .hovertext {
+    font-size: 6rem;
+  }
+  ul.topnav {
+    padding: 0 0 0 1rem;
+  }
+  ul.topnav li {
+    float: left;
+  }
+  ul.topnav li.right {
+    float: right;
+  }
+  .gallery-grid {
+    grid-template-columns: auto auto auto auto auto 24%;
+  }
+  .gallery-holder {
+    flex: 33%;
+    width: 50%;
+    max-width: 33%;
+    height: 50%;
+    padding: 0.4rem;
+  }
+
+  .thumbnail-row {
+    grid-row: 4 / span 1;
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div class="title">
+          <h1>SCSS demo</h1>
+        </div>
+        <nav>
+          <ul>
+            <li>Nestings</li>
+            <li><a href="https://www.tuni.fi/en">Test</a></li>
+            <li><a href="https://www.tuni.fi/en">Test</a></li>
+            <li><a href="https://www.tuni.fi/en">Test</a></li>
+          </ul>
+
+          <!-- nestings -->
+        </nav>
+
+        <p>
+          nav { nav { background-color: dimgray; border-radius: 1rem;
+          text-align: center; flex: 100%; font-size: $xlarge; padding: 1rem;
+          width: 100%; ul { margin: auto; padding: 0; list-style: none; } li {
+          color: ghostwhite; display: inline-block; } a { display: block;
+          padding: 6px 12px; text-decoration: none; } }
+        </p>
+      </div>
+
+      <!-- mixin section -->
+      <div class="container">
+        <div class="success">
+          <h1>Mixin</h1>
+          <p>
+            @mixin theme($theme: DarkGray) { background: $theme; border-radius:
+            1rem; box-shadow: 0 0 1px rgba($theme, 0.25); color: #fff; padding:
+            1rem; }
+          </p>
+          <p>.success { @include theme($theme: DarkGreen); } }</p>
+        </div>
+      </div>
+
+      <!--Partials section  -->
+      <div class="container">
+        <div class="partial-test">
+          <h1>Partial</h1>
+          <p>
+            .partial-test { color: white; background-color: #f44a0b;
+            border-radius: 1rem; max-width: 100%; padding: 1rem; }
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="column red">
+          <p>.red { @extend %message-shared; border-color: red; }</p>
+        </div>
+        <div class="column yellow">
+          <p>.yellow { @extend %message-shared; border-color: yellow; }</p>
+        </div>
+        <div class="column blue">
+          <p>.blue { @extend %message-shared; }</p>
+        </div>
+        <div class="column green">
+          <p>.green { @extend %message-shared; border-color: green; }</p>
+        </div>
+      </div>
+      <div class="container">
+        <h1>Variables</h1>
+        <p>
+          // _base.scss $font-stack: Helvetica, sans-serif; $primary-color:
+          #333; // sizes $small: 1rem; $medium: 1.6rem; $large: 2.5rem; $xlarge:
+          3.5rem; body { font: 100% $font-stack; color: $primary-color;
+          font-size: $medium; background-color: red; font-size: 62.5%; padding:
+          $large; margin: 0; }
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

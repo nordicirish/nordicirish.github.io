@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruff Puppers Kennels - Chihuahua page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="topnav">
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          id="bars"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="logo-holder">
+          <h1>
+            <img
+              src="logo-mob.png"
+              width="280"
+              height="40"
+              alt="Ruff Puppers Kennels"
+            />
+          </h1>
+        </div>
+        <div class="link-bar" id="myLinks">
+          <a href="index.html" class="submenu">Home</a>
+          <a href="chihuahua.html" class="active submenu">Chihuahua</a>
+          <a href="#bookmark1" class="submenu">Collie</a>
+          <a href="#bookmark2" class="submenu">Wolfhound</a>
+          <a href="#bookmark2" class="submenu">Poodle</a>
+        </div>
+      </div>
+      <div class="flex-grid">
+        <div class="content-column">
+          <div class="main-content">
+            <h2>Chihuahua</h2>
+            <p>
+              <picture
+                ><source media="(min-width:600px)" srcset="breed_p1_mob.jpg" />
+                <img
+                  class="article-img"
+                  src="breed_p1_150.jpg"
+                  alt="chihuahua"
+                  width="150"
+                  height="100"
+              /></picture>
+              The Chihuahua is one of the smallest breeds of dog, and is named
+              after the Mexican state of Chihuahua. Chihuahuas remained a rarity
+              until the early 20th century, and the American Kennel Club did not
+              register a Chihuahua until 1904. In a 1520 letter, Hernan Cortés
+              wrote that the Aztecs raised and sold the little dogs as food.
+              Colonial records refer to small, nearly hairless dogs at the
+              beginning of the 19th century, one of which claims 16th-century
+              Conquistadores found them plentiful in the region later known as
+              Chihuahua.
+            </p>
+            <p id="bookmark1">
+              <picture
+                ><source media="(min-width:600px)" srcset="breed_p2_mob.jpg" />
+                <img
+                  class="article-img"
+                  src="breed_p2_mob_150.jpg"
+                  alt="chihuahua pup"
+                  width="150"
+                  height="100"
+              /></picture>
+              An analysis of DNA from the genome of domesticated dogs indicates
+              that they entered North America from Siberia for 4,500 years and
+              were then isolated for the next 9,000 years. After contact with
+              Europeans, these lineages were replaced by Eurasian dogs and their
+              local descendants. The pre-contact dogs exhibited a unique genetic
+              signature that is now almost gone. In 2020, the sequencing of
+              ancient dog genomes indicates that in two Mexican breeds the
+              Chihuahua retains 4% and the Xoloitzcuintli 3% pre-colonial
+              ancestry.
+            </p>
+            <p>
+              Chihuahuas are the smallest breed recognized by some kennel clubs.
+              Current breed standards defined by registries specify an
+              "apple-head" or "apple-dome" skull conformation. Chihuahuas have
+              large, round eyes and large, erect ears, set in a high,
+              dramatically rounded skull. The stop is well defined, forming a
+              near 90 degree angle where the muzzle meets the skull. Dogs of the
+              older "deer" type, with a flat-topped head, more widely set eyes,
+              larger ears, and longer, more slender legs, may still be
+              registered.
+            </p>
+            <p id="bookmark2">
+              Breed standards for this dog do not generally specify a height;
+              only a weight and a description of their overall proportions.
+              Generally, the height ranges between 6 and 9 in (15 and 23 cm);
+              however, some dogs grow as tall as 30 to 38 cm (12 to 15 in). Both
+              British and American breed standards state that a Chihuahua must
+              not weigh more than 5.9 lb (2.7 kg) for conformation.
+            </p>
+          </div>
+          <div class="footer">
+            <p>
+              &#169;This page is under public domain. Content for the instructed
+              site is from Wikipedia&reg;, licensed under the Creative Commons
+              Attribution-ShareAlike License.
+            </p>
+          </div>
+        </div>
+        <div class="ad-column">
+          <img src="ad_breed_250.jpg" class="ad-img" alt="Doggo stuff" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("myLinks");
+      var z = document.getElementById("bars");
+      function myFunction() {
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+          z.style.color = "white;";
+        }
+      }
+      function closeMenu(y) {
+        if (y.matches) {
+          // If media query matches
+          x.style.display = "inline-flex";
+          // x.style.width = "100%";
+          // x.style.maxWidth = "100";
+          // x.style.borderRadius = "1rem";
+          // x.style.margin = "0.5rem 0.5rem 0 0.5rem";
+          // x.style.clear = "both";
+        } else {
+          x.style.display = "none";
+          z.style.color = "white;";
+        }
+      }
+      var y = window.matchMedia("(min-width: 600px)");
+      closeMenu(y); // Call listener function at run time
+      y.addListener(closeMenu); // Attach listener function on state changes
+    </script>
+  </body>
+</html>
